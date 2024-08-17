@@ -1,0 +1,4 @@
+1
+	scr_pillager_kick needs layers and hitboxes
+2
+	villager and pillager needs bigger sprites

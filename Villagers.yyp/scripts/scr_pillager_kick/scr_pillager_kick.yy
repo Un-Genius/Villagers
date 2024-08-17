@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_pillager_kick",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_pillager_kick",
+  "parent":{
+    "name":"attack",
+    "path":"folders/Scripts/Beings/npc/pillager/attack.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

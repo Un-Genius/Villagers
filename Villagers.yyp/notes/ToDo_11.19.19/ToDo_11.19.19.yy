@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"",
+  "%Name":"ToDo_11.19.19",
+  "name":"ToDo_11.19.19",
+  "parent":{
+    "name":"Notes",
+    "path":"folders/Notes.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

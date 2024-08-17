@@ -1,0 +1,43 @@
+1
+	obj_player main sprite is messed up by the draw grid object.
+	It tries to draw self but it needs to get rid of itself.
+2
+	obj_player doesnt move ---> var move is always set to 0
+	test around to see if its the moveS fault
+
+
+USEFUL BUT IN THE WAY:
+
+sprite_index = asset_get_index("spr_player_" + state + string(dir));
+
+//moving
+var moving = hsp!=0 || vsp!=0;
+
+
+// DIRECTION
+if (moving){ 
+    var _dir = point_direction(0, 0, hsp, vsp); 
+    dir = floor(_dir/90);
+}
+
+// X Collision
+if			 place_meeting		(x + hsp, y, obj_house0) {
+	while	!place_meeting		(x + sign(hsp), y, obj_house0) {
+								 x += sign(hsp);
+	}
+	if(dir = 0) x -= 1;
+	if(dir = 2) x += 1;
+	hsp = 0;
+	//state = "collision";
+}
+
+// Y Collision
+if			 place_meeting		(x, y + vsp, obj_house0) {
+	while	!place_meeting		(x, y + sign(vsp), obj_house0) {
+								 y += sign(vsp);
+	}
+	if(dir = 1) y += 1;
+	if(dir = 3) y -= 1;
+	vsp = 0;
+	//state = "collision";
+}

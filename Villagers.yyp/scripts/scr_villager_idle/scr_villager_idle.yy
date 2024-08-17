@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_villager_idle",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_villager_idle",
+  "parent":{
+    "name":"villagers",
+    "path":"folders/Scripts/Beings/npc/villagers.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

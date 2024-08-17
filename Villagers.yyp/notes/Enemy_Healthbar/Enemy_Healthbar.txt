@@ -1,0 +1,21 @@
+/*
+
+if (hp < maxHp) and (dead = false) {
+	draw_healthbar(x-30, y-50, x+25, y-40, (hp/maxHp)*100, c_black, c_red, c_green, 0, true, true);
+	
+}
+
+//Health
+if (hp <= 0) and (dead = false) {
+	if(global.oof = true) {
+		audio_sound_pitch(snd_OOF,random_range(0.8,1.2));
+		audio_play_sound(snd_OOF,0,0);
+	} else {
+		audio_sound_pitch(snd_death,random_range(0.8,1.2));
+		audio_play_sound(snd_death,0,0);
+	}
+	with (obj_score) theScore = theScore + 5;
+	dead = true;
+	instance_create_layer(x, y,"instances", obj_enemytype_pawn_dead);
+	instance_destroy();
+}
