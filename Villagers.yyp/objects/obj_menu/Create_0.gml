@@ -4,9 +4,10 @@ draw_set_font(fnt_menu);
 
 // DISPLAY
 global.pause		= true;
-global.view_width	= camera_get_view_width(view_camera[0]);
-global.view_height	= camera_get_view_height(view_camera[0]);
+global.view_width	= 1920/2
+global.view_height	= 1080/2
 
+window_set_size(global.view_width, global.view_height)
 display_set_gui_size(global.view_width, global.view_height);
 
 // PLAYER

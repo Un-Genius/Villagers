@@ -44,3 +44,6 @@ states_array[player_states.run]			= scr_player_run;
 states_array[player_states.attack]		= scr_player_attack;
 states_array[player_states.camera]		= scr_player_camera;
 states_array[player_states.collision]	= scr_player_collision;
+
+// INTERACTION
+interaction_object = instance_create_layer(0,0,layer,obj_interaction);
